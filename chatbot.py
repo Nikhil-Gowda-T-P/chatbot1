@@ -2,6 +2,7 @@ from email import message
 import random
 import json
 import pickle
+import pyttsx3  
 
 import numpy as np
 import nltk
@@ -62,3 +63,10 @@ while True:
     ints =predict_class(message)
     res=get_response(ints,intents)
     print(res)
+    engine = pyttsx3.init()  
+    # convert this text to speech  
+    text = res
+    engine.setProperty("rate", 175)  
+    engine.say(text)  
+    # play the speech  
+    engine.runAndWait() 
