@@ -14,6 +14,22 @@
       "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"],
       "context_set": ""
     }
+    {"tag": "creators",
+      "patterns":["Who created you?","who are the creators of you"],
+      "responses":["I was created by Anjali,,Nikhil,Rakshitha,Showri"],
+      "context_set":""
+
+    },
+    {"tag": "products",
+      "patterns":["what are the products you have"],
+      "responses":["we have men tshirts,shirts,watches,sneakers"],
+      "context_set":""
+    },
+    {"tag": "sneakers",
+      "patterns":["give info about sneakers","sneakers","which are the brands u have in sneakers"],
+      "responses":["we mainly serve puma,nike,louis phillipe"],
+      "context_set":""
+    }
   ]
   }
 
